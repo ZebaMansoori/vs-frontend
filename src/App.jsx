@@ -114,7 +114,7 @@ function App() {
   }, []);
 
   function fetchFiles() {
-    axios.get("http://localhost:3000/get-all")
+    axios.get("https://vs-backend-cjt6.onrender.com/get-all")
       .then(response => {
         setFiles(response.data.files);
       })
